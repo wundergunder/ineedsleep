@@ -1,5 +1,5 @@
 import React from 'react';
-import { Moon, Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Moon } from 'lucide-react';
 import { Link } from '../ui/Link';
 
 const Footer: React.FC = () => {
@@ -17,26 +17,6 @@ const Footer: React.FC = () => {
             <p className="text-indigo-200 mt-2">
               Connecting Calgary families with qualified night nurses for newborn care and parental rest.
             </p>
-            <div className="flex space-x-4 mt-4">
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-indigo-200 hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-indigo-200 hover:text-white transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-            </div>
           </div>
           
           <div>
@@ -71,29 +51,17 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-indigo-300 mr-2 mt-0.5" />
-                <span className="text-indigo-200">Calgary, Alberta</span>
+            <h3 className="text-lg font-semibold mb-4">Join Us</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/nurses" className="text-indigo-200 hover:text-white transition-colors">
+                  Night Nurses Apply Here
+                </Link>
               </li>
-              <li className="flex items-start">
-                <Mail className="h-5 w-5 text-indigo-300 mr-2 mt-0.5" />
-                <a 
-                  href="mailto:info@ineedsleep.ca" 
-                  className="text-indigo-200 hover:text-white transition-colors"
-                >
-                  info@ineedsleep.ca
-                </a>
-              </li>
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 text-indigo-300 mr-2 mt-0.5" />
-                <a 
-                  href="tel:+14035551234" 
-                  className="text-indigo-200 hover:text-white transition-colors"
-                >
-                  (403) 555-1234
-                </a>
+              <li>
+                <Link href="/affiliates" className="text-indigo-200 hover:text-white transition-colors">
+                  Become an Affiliate
+                </Link>
               </li>
             </ul>
           </div>

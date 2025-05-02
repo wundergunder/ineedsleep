@@ -5,6 +5,10 @@ import Services from './pages/Services';
 import Process from './pages/Process';
 import FAQ from './pages/FAQ';
 import Apply from './pages/Apply';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Nurses from './pages/Nurses';
+import Affiliates from './pages/Affiliates';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +30,22 @@ const router = createBrowserRouter([
   {
     path: '/apply',
     element: <Apply />,
+  },
+  {
+    path: '/privacy',
+    element: <Privacy />,
+  },
+  {
+    path: '/terms',
+    element: <Terms />,
+  },
+  {
+    path: '/nurses',
+    element: <Nurses />,
+  },
+  {
+    path: '/affiliates',
+    element: <Affiliates />,
   },
 ]);
 
