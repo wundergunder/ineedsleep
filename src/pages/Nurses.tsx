@@ -19,12 +19,14 @@ const Nurses: React.FC = () => {
       <Section background="white">
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-xl shadow-md p-8">
-            {/* Placeholder for Go High Level form embed */}
-            <div className="bg-gray-100 rounded p-8 text-center">
-              <p className="text-gray-700">
-                This is where the Go High Level form for night nurse applications will be embedded.
-              </p>
-            </div>
+            <iframe 
+              src="https://api.leadconnectorhq.com/widget/survey/2biLveUCIECdBSIoaWBF" 
+              style={{ border: 'none', width: '100%' }} 
+              scrolling="no" 
+              id="2biLveUCIECdBSIoaWBF" 
+              title="Nurse Onboarding"
+            />
+            <script src="https://link.msgsndr.com/js/form_embed.js" async />
           </div>
         </div>
       </Section>
