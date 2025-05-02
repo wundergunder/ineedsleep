@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/layout/Layout';
 import Section from '../components/ui/Section';
 
 const Nurses: React.FC = () => {
+  useEffect(() => {
+    // Add message listener for iframe resizing
+    const handleMessage = (event: MessageEvent) => {
+      if (event.data.type === 'setHeight') {
+        const iframe = document.getElementById('2biLveUCIECdBSIoaWBF') as HTMLIFrameElement;
+        if (iframe) {
+          iframe.style.height = `${event.data.height}px`;
+        }
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
+
   return (
     <Layout>
       <Section className="pt-32 pb-16" background="indigo">
@@ -17,16 +32,15 @@ const Nurses: React.FC = () => {
       </Section>
 
       <Section background="white">
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-xl shadow-md p-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <iframe 
               src="https://api.leadconnectorhq.com/widget/survey/2biLveUCIECdBSIoaWBF" 
-              style={{ border: 'none', width: '100%' }} 
+              style={{ border: 'none', width: '100%', minHeight: '800px' }} 
               scrolling="no" 
               id="2biLveUCIECdBSIoaWBF" 
               title="Nurse Onboarding"
             />
-            <script src="https://link.msgsndr.com/js/form_embed.js" async />
           </div>
         </div>
       </Section>
