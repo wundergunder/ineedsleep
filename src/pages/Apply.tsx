@@ -83,6 +83,10 @@ const Apply: React.FC = () => {
             </div>
           </div>
 
+          <div className="text-center mb-8">
+            <h3 className="text-xl font-semibold text-gray-900">To Get Started, Fill Form Below:</h3>
+          </div>
+
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <iframe 
               src="https://api.leadconnectorhq.com/widget/survey/oUqYSWSK7acDphldA1JZ" 
