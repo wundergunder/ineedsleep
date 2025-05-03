@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../components/layout/Layout';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
-import HowItWorksSection from '../components/home/HowItWorksSection';
 import { CheckCircle, AlertCircle, Clock, DollarSign, Clipboard, Users } from 'lucide-react';
 
 const Process: React.FC = () => {
@@ -19,9 +18,6 @@ const Process: React.FC = () => {
           </p>
         </div>
       </Section>
-
-      {/* Process Steps */}
-      <HowItWorksSection />
 
       {/* Timeline Details */}
       <Section background="white">
@@ -47,13 +43,13 @@ const Process: React.FC = () => {
                   <span className="text-white text-xs font-bold">1</span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Day 1: Initial Application</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Complete Detailed Intake Form</h3>
               <p className="text-gray-600 mb-4">
-                Fill out our online application form with your family's details and night nurse requirements. We'll review your application and contact you within 24 hours.
+                Fill out our comprehensive intake form with your family's details and night nurse requirements.
               </p>
               <div className="flex items-center text-indigo-600">
                 <Clock className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">Estimated time: 10 minutes</span>
+                <span className="text-sm font-medium">Estimated time: 20 minutes</span>
               </div>
             </div>
             
@@ -63,14 +59,10 @@ const Process: React.FC = () => {
                   <span className="text-white text-xs font-bold">2</span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Day 2: Deposit & Detailed Intake</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Pay Deposit</h3>
               <p className="text-gray-600 mb-4">
-                After your initial application is reviewed, you'll pay a $250 deposit to secure your placement and complete a more detailed intake form about your specific needs and preferences.
+                Secure your placement with a $250 deposit to begin the matching process.
               </p>
-              <div className="flex items-center text-indigo-600 mb-4">
-                <Clock className="h-4 w-4 mr-2" />
-                <span className="text-sm font-medium">Estimated time: 20 minutes</span>
-              </div>
               <div className="flex items-center text-indigo-600">
                 <DollarSign className="h-4 w-4 mr-2" />
                 <span className="text-sm font-medium">Deposit: $250 (applied to your final fee)</span>
@@ -83,9 +75,9 @@ const Process: React.FC = () => {
                   <span className="text-white text-xs font-bold">3</span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Day 3-4: Consultation Call</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Consultation Call</h3>
               <p className="text-gray-600 mb-4">
-                We'll schedule a personal consultation call to discuss your needs in detail, answer any questions, and gather additional information to make the perfect match.
+                Receive a calendar invite for a personalized consultation to discuss your needs in detail and answer any questions.
               </p>
               <div className="flex items-center text-indigo-600">
                 <Clock className="h-4 w-4 mr-2" />
@@ -99,7 +91,7 @@ const Process: React.FC = () => {
                   <span className="text-white text-xs font-bold">4</span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Day 5-6: Matching Process</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Matching Process</h3>
               <p className="text-gray-600 mb-4">
                 Our team reviews our database of vetted night nurses to find the best matches for your family's specific needs, preferences, and schedule.
               </p>
@@ -137,7 +129,7 @@ const Process: React.FC = () => {
                   <span className="text-white text-xs font-bold">5</span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Day 7: Receive Your Matches</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Receive Your Matches</h3>
               <p className="text-gray-600 mb-4">
                 You'll receive profiles of 3-5 carefully selected night nurses who match your requirements. Each profile includes their experience, qualifications, availability, and rates.
               </p>
@@ -153,7 +145,7 @@ const Process: React.FC = () => {
                   <span className="text-white text-xs font-bold">6</span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Days 8-10: Interview & Select</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Interview & Select</h3>
               <p className="text-gray-600 mb-4">
                 Contact and interview your matched candidates, ask questions, and determine who is the best fit for your family. Once you've decided, you'll pay the balance of your placement fee.
               </p>

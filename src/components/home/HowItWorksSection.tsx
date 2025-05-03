@@ -8,20 +8,20 @@ const HowItWorksSection: React.FC = () => {
   const steps = [
     {
       number: 1,
-      title: 'Submit Interest Form',
-      description: 'Fill out our quick interest form to share your family\'s needs and preferences.',
+      title: 'Complete Detailed Intake',
+      description: 'Fill out our comprehensive intake form to share your family\'s needs and preferences.',
       icon: <ClipboardCheck className="h-5 w-5" />,
     },
     {
       number: 2,
       title: 'Pay Deposit',
-      description: 'Secure your placement with a $250 deposit and complete our detailed intake form.',
+      description: 'Secure your placement with a $250 deposit to begin the matching process.',
       icon: <CreditCard className="h-5 w-5" />,
     },
     {
       number: 3,
       title: 'Consultation Call',
-      description: 'We\'ll schedule a call to understand your specific needs and answer any questions.',
+      description: 'Receive a calendar invite for a personalized consultation to discuss your specific needs.',
       icon: <Phone className="h-5 w-5" />,
     },
     {

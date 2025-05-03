@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../components/layout/Layout';
 import Section from '../components/ui/Section';
 import FAQItem from '../components/ui/FAQItem';
-import Button from '../components/ui/Button';
 
 const FAQ: React.FC = () => {
   const generalFAQs = [
@@ -156,26 +155,6 @@ const FAQ: React.FC = () => {
                 />
               ))}
             </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* Contact Section */}
-      <Section background="light">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Still Have Questions?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            We're here to help! Reach out to our team for personalized assistance.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button href="/contact">
-              Contact Us
-            </Button>
-            <Button href="/apply" variant="outline">
-              Start Application
-            </Button>
           </div>
         </div>
       </Section>

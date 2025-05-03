@@ -169,10 +169,6 @@ const Services: React.FC = () => {
                 </div>
               </li>
             </ul>
-            
-            <Button href="/contact">
-              Discuss Your Unique Needs
-            </Button>
           </div>
         </div>
       </Section>
@@ -187,7 +183,7 @@ const Services: React.FC = () => {
           <Button 
             href="/apply" 
             size="lg" 
-            className="bg-white text-indigo-600 hover:bg-indigo-50"
+            className="bg-white text-indigo-600 hover:bg-indigo-50 hover:text-indigo-700"
           >
             Apply Now
           </Button>
