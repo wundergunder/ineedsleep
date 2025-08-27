@@ -43,6 +43,11 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/chat" className="text-indigo-200 hover:text-white transition-colors">
+                  Chat Support
+                </Link>
+              </li>
+              <li>
                 <Link href="/apply" className="text-indigo-200 hover:text-white transition-colors">
                   Apply Now
                 </Link>

@@ -54,6 +54,9 @@ const Navbar: React.FC = () => {
             <Link href="/faq" className="text-gray-700 hover:text-indigo-600 transition-colors">
               FAQ
             </Link>
+            <Link href="/chat" className="text-gray-700 hover:text-indigo-600 transition-colors">
+              Chat Support
+            </Link>
             <Link 
               href="/apply" 
               className="bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 transition-all transform hover:scale-105"
@@ -108,6 +111,13 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsOpen(false)}
               >
                 FAQ
+              </Link>
+              <Link 
+                href="/chat" 
+                className="text-gray-700 hover:text-indigo-600 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Chat Support
               </Link>
               <Link 
                 href="/apply" 

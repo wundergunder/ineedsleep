@@ -9,6 +9,7 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Nurses from './pages/Nurses';
 import Affiliates from './pages/Affiliates';
+import ChatBotPage from './pages/ChatBot';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: '/affiliates',
     element: <Affiliates />,
+  },
+  {
+    path: '/chat',
+    element: <ChatBotPage />,
   },
 ]);
 
